@@ -1,0 +1,40 @@
+.side-nav {
+    width: 296px;
+    height: 100vh!important;
+    background-color: $gray-100;
+    padding-top: 32px;
+    .menu {
+        h1 {
+            a {
+                width: 151px;
+                height: 40px;
+                background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week5/logo-ANSWER.svg");
+                background-size: contain;
+                @include hide-text;
+            }
+        }
+
+        ul {
+            li:nth-child(3) {
+                padding-left: $spacer*3.5;
+                border-left: 4px solid $text-secondary;
+            }
+
+            a{
+                @include hover-color;
+            }
+        }
+    }
+
+    .user {
+        a {
+            @include hover-opacity;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
